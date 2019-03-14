@@ -57,12 +57,12 @@ class TestInvoice(unittest2.TestCase):
         assert_invoice(self, response, resp)
 
     @responses.activate
-    def test_invoice_cancel(self):
-        result = mock_file('dummy_invoice_cancel')
-        url = '{0}/{1}/cancel'.format(self.invoice_url, self.invoice_id)
+    def test_invoice_void(self):
+        result = mock_file('dummy_invoice_void')
+        url = '{0}/{1}/void'.format(self.invoice_url, self.invoice_id)
         responses.add(responses.POST, url, status=200,
                       body=result, match_querystring=True)
-        response = self.client.invoice.cancel(self.invoice_id)
+        response = self.client.invoice.void(self.invoice_id)
         resp = json.loads(result)
         assert_invoice(self, response, resp)
 
