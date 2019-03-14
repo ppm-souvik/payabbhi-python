@@ -1,16 +1,20 @@
-import sys
 import json
+import sys
+
 import responses
+import unittest2
+
 import payabbhi
 
-import unittest2
-from .helpers import mock_file, assert_list_of_invoice_items, assert_invoice_item
+from .helpers import (assert_invoice_item, assert_list_of_invoice_items,
+                      mock_file)
 
 
 class TestInvoiceItem(unittest2.TestCase):
 
     def setUp(self):
-        self.client = payabbhi.Client(access_id='access_id', secret_key='secret_key')
+        self.client = payabbhi.Client(
+            access_id='access_id', secret_key='secret_key')
         payabbhi.api_base = 'https://payabbhi.com'
         self.invoice_item_id = 'dummy_invoice_item_id'
         self.invoice_item_url = payabbhi.api_base + '/api/v1/invoiceitems'
@@ -29,10 +33,12 @@ class TestInvoiceItem(unittest2.TestCase):
         result = mock_file('dummy_invoice_item_collection_filters')
         count = 3
         skip = 2
-        url = '{0}?count={1}&skip={2}'.format(self.invoice_item_url, count, skip)
+        url = '{0}?count={1}&skip={2}'.format(
+            self.invoice_item_url, count, skip)
         responses.add(responses.GET, url, status=200,
                       body=result, match_querystring=True)
-        response = self.client.invoiceitem.all(data={'count': count, 'skip':skip})
+        response = self.client.invoiceitem.all(
+            data={'count': count, 'skip': skip})
         resp = json.loads(result)
         assert_list_of_invoice_items(self, response, resp)
 
