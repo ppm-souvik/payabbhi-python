@@ -5,7 +5,7 @@
         {
             "id": "sub_xLH108FJwUlX47SI",
             "object": "subscription",
-            "plan_id": "plan_tuOWN0Sc0uMB4s8E",
+            "plan_id": "dummy_plan_id",
             "customer_id": "dummy_customer_id",
             "billing_method": "automatic",
             "quantity": 1,
@@ -26,7 +26,7 @@
         {
             "id": "sub_luQ4QIXzaEIN0g5D",
             "object": "subscription",
-            "plan_id": "plan_tuOWN0Sc0uMB4s8E",
+            "plan_id": "dummy_plan_id",
             "customer_id": "dummy_customer_id",
             "billing_method": "automatic",
             "quantity": 1,

@@ -52,7 +52,7 @@ class TestSubscription(unittest2.TestCase):
         url = self.subscription_url
         responses.add(responses.POST, url, status=200,
                       body=result, match_querystring=True)
-        response = self.client.subscription.create(data={'plan_id':'plan_tuOWN0Sc0uMB4s8E', 'customer_id':'dummy_customer_id','billing_cycle_count':5})
+        response = self.client.subscription.create(data={'plan_id':'dummy_plan_id', 'customer_id':'dummy_customer_id','billing_cycle_count':5})
         resp = json.loads(result)
         assert_subscription(self, response, resp)
 
