@@ -3,7 +3,7 @@
     "object": "subscription",
     "plan_id": "dummy_plan_id",
     "customer_id": "dummy_customer_id",
-    "billing_method": "automatic",
+    "billing_method": "recurring",
     "quantity": 1,
     "customer_notification_by": "merchant",
     "billing_cycle_count": 5,
