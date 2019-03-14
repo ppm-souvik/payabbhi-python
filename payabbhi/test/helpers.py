@@ -109,6 +109,7 @@ def assert_subscription(self, actual, expected):
     self.assertEqual(actual.cancel_at_period_end, expected.get('cancel_at_period_end'))
     self.assertEqual(actual.due_at, expected.get('due_at'))
     self.assertEqual(actual.trial_end_at, expected.get('trial_end_at'))
+    self.assertEqual(actual.trial_duration, expected.get('trial_duration'))
     self.assertEqual(actual.status, expected.get('status'))
     self.assertEqual(actual.current_start_at, expected.get('current_start_at'))
     self.assertEqual(actual.current_end_at, expected.get('current_end_at'))
