@@ -52,7 +52,8 @@ class TestInvoiceItem(unittest2.TestCase):
         url = self.invoice_item_url
         responses.add(responses.POST, url, status=200,
                       body=result, match_querystring=True)
-        response = self.client.invoiceitem.create(data={'customer_id':'cust_2WmsQoSRZMWWkcZg', 'name':'Line Item', 'currency':'INR', 'amount':200})
+        response = self.client.invoiceitem.create(
+            data={'customer_id': 'dummy_customer_id', 'name': 'Line Item', 'currency': 'INR', 'amount': 200})
         resp = json.loads(result)
         assert_invoice_item(self, response, resp)
 

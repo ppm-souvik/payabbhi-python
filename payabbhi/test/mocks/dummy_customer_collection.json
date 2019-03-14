@@ -3,7 +3,7 @@
     "object": "list",
     "data": [
         {
-            "id": "cust_2WmsQoSRZMWWkcZg",
+            "id": "dummy_customer_id",
             "object": "customer",
             "name": "bruce wayne",
             "email": "g@b.com",
@@ -20,7 +20,7 @@
                         "id": "sub_luQ4QIXzaEIN0g5D",
                         "object": "subscription",
                         "plan_id": "plan_tuOWN0Sc0uMB4s8E",
-                        "customer_id": "cust_2WmsQoSRZMWWkcZg",
+                        "customer_id": "dummy_customer_id",
                         "billing_method": "automatic",
                         "quantity": 1,
                         "customer_notification_by": "merchant",
@@ -42,7 +42,7 @@
             "created_at": 1539003109
         },
         {
-            "id": "cust_NDgjdWVgjKyb0qac",
+            "id": "dummy_customer_id",
             "object": "customer",
             "name": "",
             "email": "b@b.com",

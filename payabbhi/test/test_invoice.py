@@ -52,7 +52,7 @@ class TestInvoice(unittest2.TestCase):
         url = self.invoice_url
         responses.add(responses.POST, url, status=200,
                       body=result, match_querystring=True)
-        response = self.client.invoice.create(data={'customer_id':'cust_2WmsQoSRZMWWkcZg', 'invoice_no':'123123123123','due_date':1549176945,'currency':'INR', 'description':'TestInvoice','notes':{"mode":"test"},'line_items':[{"id":"item_jYGaYf14SeZ13DkJ"}]})
+        response = self.client.invoice.create(data={'customer_id':'dummy_customer_id', 'invoice_no':'123123123123','due_date':1549176945,'currency':'INR', 'description':'TestInvoice','notes':{"mode":"test"},'line_items':[{"id":"item_jYGaYf14SeZ13DkJ"}]})
         resp = json.loads(result)
         assert_invoice(self, response, resp)
 
