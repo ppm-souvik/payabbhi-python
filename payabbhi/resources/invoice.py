@@ -19,7 +19,7 @@ class Invoice(APIResource):
                 billing_method:     A filter on the invoice list based on the billing_method field
                 due_date_from:      A filter criterion based on the due_date field of the invoice object
                 due_date_to:        A filter criterion based on the due_date field of the invoice object
-                customer_id:        A filter on the invoice list based on the customer_id field
+                email:              A filter on the invoice list based on the customer's email field
                 subscription_id:    A filter on the invoice list based on the subscription_id field
         Returns:
             List of Invoice objects
