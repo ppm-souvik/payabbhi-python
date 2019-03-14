@@ -3,7 +3,7 @@
     "object": "list",
     "data": [
         {
-            "id": "invt_v1uXGmhIUMylFQPS",
+            "id": "dummy_invoice_id",
             "object": "invoice",
             "amount": 200,
             "billing_method": "automatic",
