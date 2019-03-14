@@ -41,6 +41,7 @@ class Subscription(APIResource):
                 billing_method: Billing mode of the Subscription. the value can be either automatic or manual.
                 due_by_days: No. of days by which the invoices associated with the subscription should be paid starting from the Invoice Issue date. This is applicable only when billing_method is manual.
                 notes: key value pair as notes
+                upfront_items: List of item objects to be included as upfront charges or set up fees of the subscription.
         Returns:
             Subscription object containing data for created subscription
         """
