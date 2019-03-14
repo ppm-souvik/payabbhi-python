@@ -125,8 +125,6 @@ def assert_invoice_item(self, actual, expected):
     self.assertEqual(actual.amount, expected.get('amount'))
     self.assertEqual(actual.currency, expected.get('currency'))
     self.assertEqual(actual.customer_id, expected.get('customer_id'))
-    self.assertEqual(actual.invoice_id, expected.get('invoice_id'))
-    self.assertEqual(actual.subscription_id, expected.get('subscription_id'))
     self.assertEqual(actual.quantity, expected.get('quantity'))
     self.assertEqual(actual.created_at, expected.get('created_at'))
     self.assertEqual(actual.notes, expected.get('notes'))

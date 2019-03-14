@@ -24,8 +24,6 @@
                     "amount": 100,
                     "currency": "INR",
                     "customer_id": "cust_2WmsQoSRZMWWkcZg",
-                    "invoice_id": "invt_srxOZZk6dIgWTVls",
-                    "subscription_id": "",
                     "quantity": 1,
                     "created_at": 1539171807,
                     "notes": null
@@ -64,8 +62,6 @@
                     "amount": 100,
                     "currency": "INR",
                     "customer_id": "cust_2WmsQoSRZMWWkcZg",
-                    "invoice_id": "invt_srxOZZk6dIgWTVls",
-                    "subscription_id": "",
                     "quantity": 1,
                     "created_at": 1539171807,
                     "notes": null
