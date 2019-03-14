@@ -24,7 +24,7 @@
             "notes": null
         },
         {
-            "id": "sub_luQ4QIXzaEIN0g5D",
+            "id": "dummy_subscription_id",
             "object": "subscription",
             "plan_id": "dummy_plan_id",
             "customer_id": "dummy_customer_id",
