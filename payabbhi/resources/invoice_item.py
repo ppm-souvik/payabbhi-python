@@ -33,6 +33,7 @@ class InvoiceItem(APIResource):
                 amount: Amount of the invoice item
                 currency: Currency of the invoice item amoount
                 invoice_id: The unique identifier of the invoice to which this invoice item to be added
+                subscription_id: The unique identifier of the subscription to which this invoice item is to be added as an addon
                 description: Description of the invoice item
                 quantity: Quantity of the invoice item
                 notes: key value pair as notes
