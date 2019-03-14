@@ -1,13 +1,12 @@
 import json
 import sys
 
+import payabbhi
 import responses
 import unittest2
 
-import payabbhi
-
 from .helpers import (assert_invoice_item, assert_list_of_invoice_items,
-                      mock_file)
+                      assert_list_of_invoices, mock_file)
 
 
 class TestInvoiceItem(unittest2.TestCase):
@@ -62,6 +61,17 @@ class TestInvoiceItem(unittest2.TestCase):
             data={'customer_id': 'dummy_customer_id', 'name': 'Line Item', 'currency': 'INR', 'amount': 200})
         resp = json.loads(result)
         assert_invoice_item(self, response, resp)
+
+    @responses.activate
+    def test_invoice_item_retrieve_invoices(self):
+        result = mock_file('dummy_invoice_collection')
+        url = '{0}/{1}/invoices'.format(self.invoice_item_url,
+                                        self.invoice_item_id)
+        responses.add(responses.GET, url, status=200,
+                      body=result, match_querystring=True)
+        response = self.client.invoiceitem.invoices(self.invoice_item_id)
+        resp = json.loads(result)
+        assert_list_of_invoices(self, response, resp)
 
     @responses.activate
     def test_invoice_item_delete(self):
