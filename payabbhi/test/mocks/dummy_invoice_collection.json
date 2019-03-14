@@ -37,7 +37,7 @@
             "notify_by": "email",
             "payment_attempt": 0,
             "invoice_no": "123123123123",
-            "status": "active",
+            "status": "issued",
             "subscription_id": "",
             "url": "https://payabbhi.com/zrt2zlh5"
         },
@@ -74,7 +74,7 @@
             "notify_by": "email",
             "payment_attempt": 0,
             "invoice_no": "INV_90976164",
-            "status": "active",
+            "status": "issued",
             "subscription_id": "sub_xLH108FJwUlX47SI",
             "url": "https://payabbhi.com/zta7qvp8"
         }
