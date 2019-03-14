@@ -3,7 +3,7 @@
     "object": "list",
     "data": [
         {
-            "id": "item_jYGaYf14SeZ13DkJ",
+            "id": "dummy_item_id",
             "object": "invoiceitem",
             "name": "Line Item",
             "description": "",
@@ -16,7 +16,7 @@
             "deleted_at": 0
         },
         {
-            "id": "item_I9Gh0wJHJ2tvorbT",
+            "id": "dummy_item_id",
             "object": "invoiceitem",
             "name": "Line Item",
             "description": "",

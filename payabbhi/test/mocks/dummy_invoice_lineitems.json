@@ -3,7 +3,7 @@
     "object": "list",
     "data": [
         {
-            "id": "item_FL3nHHB7i7Fpcj1J",
+            "id": "dummy_item_id",
             "object": "invoiceitem",
             "name": "N2",
             "description": "D2",
