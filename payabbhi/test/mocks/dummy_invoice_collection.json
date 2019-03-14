@@ -26,7 +26,8 @@
                     "customer_id": "cust_2WmsQoSRZMWWkcZg",
                     "quantity": 1,
                     "created_at": 1539171807,
-                    "notes": null
+                    "notes": null,
+                    "deleted_at": 0
                 }
               ]
             },
@@ -45,7 +46,6 @@
             "object": "invoice",
             "amount": 100,
             "billing_method": "automatic",
-            "customer_id": "cust_2WmsQoSRZMWWkcZg",
             "currency": "INR",
             "created_at": 1539171807,
             "description": "",
@@ -64,7 +64,8 @@
                     "customer_id": "cust_2WmsQoSRZMWWkcZg",
                     "quantity": 1,
                     "created_at": 1539171807,
-                    "notes": null
+                    "notes": null,
+                    "deleted_at": 0
                 }
               ]
             },

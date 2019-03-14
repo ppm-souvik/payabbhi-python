@@ -128,6 +128,7 @@ def assert_invoice_item(self, actual, expected):
     self.assertEqual(actual.quantity, expected.get('quantity'))
     self.assertEqual(actual.created_at, expected.get('created_at'))
     self.assertEqual(actual.notes, expected.get('notes'))
+    self.assertEqual(actual.deleted_at, expected.get('deleted_at'))
 
 def assert_invoice(self, actual, expected):
     self.assertEqual(isinstance(actual, payabbhi.resources.Invoice), True)

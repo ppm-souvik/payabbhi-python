@@ -8,5 +8,6 @@
     "customer_id": "cust_2WmsQoSRZMWWkcZg",
     "quantity": 1,
     "created_at": 1539174367,
-    "notes": null
+    "notes": null,
+    "deleted_at": 0
 }
