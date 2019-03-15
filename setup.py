@@ -1,4 +1,5 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+PACKAGES = find_packages()
 
 with open('LONG_DESCRIPTION.rst') as f:
     long_description = f.read()
@@ -14,9 +15,10 @@ setup(
     license="MIT",
     install_requires=["requests"],
     package_dir={'payabbhi': 'payabbhi', 'payabbhi.resources': 'payabbhi/resources', 'payabbhi.utility': 'payabbhi/utility'},
-    packages=['payabbhi', 'payabbhi.resources', 'payabbhi.test', 'payabbhi.utility'],
+    # packages=['payabbhi', 'payabbhi.resources', 'payabbhi.test', 'payabbhi.utility'],
     test_suite='payabbhi.test.all',
     tests_require=['unittest2', 'responses'],
+    packages=PACKAGES,
     keywords='payabbhi payment processing api checkout india',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
